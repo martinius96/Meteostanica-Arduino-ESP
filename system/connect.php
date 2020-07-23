@@ -1,4 +1,5 @@
-<?php $con = mysqli_connect("localhost","skarduino","arduino","skarduino");
+<?php 
+ $con = mysqli_connect("localhost","POUZIVATEL","PASSWORD","NAZOV_DB");
      mysqli_set_charset($con,"utf8");
      
 if (mysqli_connect_errno())
