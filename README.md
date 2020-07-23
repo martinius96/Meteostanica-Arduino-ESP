@@ -12,7 +12,6 @@
 * Reset dosky na diaľku
 * Log prihlásení/zmena loginu
 * Indikátor stavu pripojenia dosky
-* Náhľad zdrojového kódu pre mikrokontróler
 * Zmena názvov jednotlivých izieb/názvov senzorov
 
 **Komunikačný hardvér pre meteostanicu:**
