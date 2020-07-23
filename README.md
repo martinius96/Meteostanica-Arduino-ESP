@@ -42,3 +42,22 @@
 ![Prehľad nameraných údajov](https://i.nahraj.to/f/2fIb.PNG)
 ![Grafická reprezentácia nameraných údajov v čase](https://i.nahraj.to/f/2fIe.PNG)
 ![Budíková reprezentácia maxím, miním, priemerov](https://i.nahraj.to/f/2fIf.PNG)
+
+# Schéma zapojenia
+**Arduino + BMP280 + DHT22 + DS18B20:**
+![Arduino + BMP280 + DHT22 + DS18B20](https://i.imgur.com/sMJskFE.png)
+
+**Arduino + BME280 + DS18B20:**
+![Arduino + BME280 + DS18B20](https://i.imgur.com/z2254a7.png)
+
+**NodeMCU + BMP280 + DHT22 + DS18B20:**
+![NodeMCU + BMP280 + DHT22 + DS18B20](https://i.imgur.com/AyyBSra.png)
+
+**NodeMCU + BME280 + DS18B20:**
+![NodeMCU + BME280 + DS18B20](https://i.imgur.com/gL3FFpP.png)
+
+**ESP32 + BMP280 + DHT22 + DS18B20:**
+![ESP32 + BMP280 + DHT22 + DS18B20](https://i.imgur.com/OCqmDPv.png)
+
+**ESP32 + BME280 + DS18B20:**
+![ESP32 + BME280 + DS18B20](https://i.imgur.com/ehTWE0m.png)
