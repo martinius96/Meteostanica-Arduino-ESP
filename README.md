@@ -44,6 +44,7 @@
 
 # Inštalácia a spustenie projektu
 * Obsah zložky examples/src/ nakopírovať do: C:/Users/(ACTUAL_USER)/Documents/Arduino/libraries
+* Zo zložky /sql/ importovať .sql súbor cez phpmyadmin do databázy - import štruktúry tabuľky / aj vzorových dát
 * V súboroch /system/connect.php a /system/nodemcu/api.php je potrebné zmeniť údaje k MySQL databáze
 * Default login do webaplikácie je: **admin** heslo: **admin** (meno a heslo uložené v SHA1 formáte)
 * Do použitého zdrojového kódu pre mikrokontróler je potrebné upraviť adresu webu a cestu k add.php súboru, kam bude vykonávať GET requesty
