@@ -14,11 +14,11 @@
 * Indikátor stavu pripojenia dosky
 * Zmena názvov jednotlivých izieb/názvov senzorov
 # Hardvér
-**Komunikačný hardvér pre meteostanicu:**
+**Komunikačný hardvér pre meteostanicu (IBA HTTP - 80):**
 * Arduino Uno + Ethernet shield Wiznet W5100 - HTTP
 * Arduino Uno + Ethernet modul Wiznet W5200 až W5500 - HTTP
-* ESP8266 (NodeMCU, Wemos D1 Mini) - HTTP / HTTPS
-* ESP32 (DevKit) - HTTP / HTTPS
+* ESP8266 (NodeMCU, Wemos D1 Mini) - HTTP, možné aj HTTPS
+* ESP32 (DevKit) - HTTP, možné aj HTTPS
 
 **Kombinácie senzorov (zdrojové kódy vyhotovené pre):**
 * **Variant 1** -  DS18B20 + DHT22 + BMP280
@@ -36,9 +36,15 @@
 # Prekvizita
 **Pre spustenie projektu je nutné:**
 * Mať webserver v LAN sieti, alebo na internete, kam sa bude Arduino pripájať
-* Webserver musí byť aj na HTTP protokole (Arduino nepodporuje HTTPS)
+* Webserver musí byť na HTTP protokole (Arduino nepodporuje HTTPS)
 * Webserver musí mať MySQL databázu (napr. PHPMyAdmin)
 * Webserver musí mať prístup na internet (knižnice na CDN serveroch: Jquery, Bootstrap)
+
+# Inštalácia a spustenie projektu
+* Obsah zložky examples/src/ nakopírovať do: C:/Users/(ACTUAL_USER)/Documents/Arduino/libraries
+* V súboroch /system/connect.php a /system/nodemcu/api.php je potrebné zmeniť údaje k MySQL databáze
+* Default login do webaplikácie je: **admin** heslo: **admin** (meno a heslo uložené v SHA1 formáte)
+* Do použitého zdrojového kódu pre mikrokontróler je potrebné upraviť adresu webu a cestu k add.php súboru, kam bude vykonávať GET requesty
 
 **Screenshoty webaplikácie meteostanice:**
 ![Prehľad nameraných údajov](https://i.nahraj.to/f/2fIb.PNG)
