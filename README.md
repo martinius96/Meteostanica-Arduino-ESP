@@ -1,6 +1,8 @@
 # Meteostanica-Arduino-ESP
 **Podpora pre viac projektov zdarma: https://paypal.me/chlebovec**
 
+* free verzia neobsahuje checksum overenie nameraných údajov (-127 pri DS18B20 pri zlom zapojení, poruche senzorov), neinformuje o chybných senzoroch, dáta webserver prijíma po HTTP protokole GET metódou - obmedzenie free verzie
+
 **Meteostanica ponúka:**
 * Záznam 3x teploty, 1x atmosférický tlak (možnosť prepočítavať na hladinu mora, možnosť určovať aj nadmorskú výšku), 1x vlhkosť vzduchu
 * Grafické používateľské rozhranie (responzívne)
