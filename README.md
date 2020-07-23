@@ -1,4 +1,28 @@
 # Meteostanica-Arduino-ESP
+**Meteostanica ponúka:**
+* Záznam 3x teploty, 1x atmosférický tlak (možnosť prepočítavať na hladinu mora, možnosť určovať aj nadmorskú výšku), 1x vlhkosť vzduchu
+* Grafické používateľské rozhranie (responzívne)
+* Výpis real-time dát do tabuľky s overením konektivity
+* Tabuľkový výpis posledných 1000 meraní
+* Login systém
+* Archivácia v 5-15-minútových intervaloch do MySQL databázy, Google Grafy (náhrada za CanvasJS) - výpis grafov aktuálny deň + 7 posledných dní
+* Prognóza počasia z externého servera / BETA verzia vlastnej predpovede
+* Reset dosky na diaľku
+* Log prihlásení/zmena loginu
+* Indikátor stavu pripojenia dosky
+* Náhľad zdrojového kódu pre mikrokontróler
+* Zmena názvov jednotlivých izieb/názvov senzorov
+
+**Komunikačný hardvér pre meteostanicu:**
+* Arduino Uno + Ethernet shield Wiznet W5100 - HTTP
+* Arduino Uno + Ethernet modul Wiznet W5200 až W5500 - HTTP
+* ESP8266 (NodeMCU, Wemos D1 Mini) - HTTP / HTTPS
+* ESP32 (DevKit) - HTTP / HTTPS
+
+**Kombinácie senzorov (zdrojové kódy vyhotovené pre):**
+* **Variant 1** -  DS18B20 + DHT22 + BMP280
+* **Variant 2** - DS18B20 + DS18B20 (outdoor) + BME280
+* **Variant 3** - DS18B20 + SHT21 + BMP280
 
 **Softvérové technológie pre meteostanicu:**
 * PHP 5.6 / 7+
@@ -13,9 +37,3 @@
 * Webserver musí byť aj na HTTP protokole (Arduino nepodporuje HTTPS)
 * Webserver musí mať MySQL databázu (napr. PHPMyAdmin)
 * Webserver musí mať prístup na internet (knižnice na CDN serveroch: Jquery, Bootstrap)
-
-**Komunikačný hardvér pre meteostanicu:**
-* Arduino Uno + Ethernet shield Wiznet W5100 - HTTP
-* Arduino Uno + Ethernet modul Wiznet W5200 až W5500 - HTTP
-* ESP8266 (NodeMCU, Wemos D1 Mini) - HTTP / HTTPS
-* ESP32 (DevKit) - HTTP / HTTPS
