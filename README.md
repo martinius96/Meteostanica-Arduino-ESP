@@ -13,7 +13,7 @@
 * Log prihlásení/zmena loginu
 * Indikátor stavu pripojenia dosky
 * Zmena názvov jednotlivých izieb/názvov senzorov
-
+# Hardvér
 **Komunikačný hardvér pre meteostanicu:**
 * Arduino Uno + Ethernet shield Wiznet W5100 - HTTP
 * Arduino Uno + Ethernet modul Wiznet W5200 až W5500 - HTTP
@@ -24,6 +24,7 @@
 * **Variant 1** -  DS18B20 + DHT22 + BMP280
 * **Variant 2** - DS18B20 + DS18B20 (outdoor) + BME280
 
+# Softvér
 **Softvérové technológie pre meteostanicu:**
 * PHP 5.6 / 7+
 * HTML 5
