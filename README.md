@@ -45,6 +45,8 @@
 * V súboroch /system/connect.php a /system/nodemcu/api.php je potrebné zmeniť údaje k MySQL databáze
 * Default login do webaplikácie je: **admin** heslo: **admin** (meno a heslo uložené v SHA1 formáte)
 * Do použitého zdrojového kódu pre mikrokontróler je potrebné upraviť adresu webu a cestu k add.php súboru, kam bude vykonávať GET requesty
+* Zdrojové kódy pre mikrokontroléry sa nachádzajú v zložke examples
+* Klient, ktorý sa pripája na webserver musí mať pripojenie na internet (sťahujú sa CDN scripty na Bootstrap, Google Charts)
 
 **Screenshoty webaplikácie meteostanice:**
 ![Prehľad nameraných údajov](https://i.nahraj.to/f/2fIb.PNG)
