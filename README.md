@@ -44,7 +44,7 @@
 ![Grafická reprezentácia nameraných údajov v čase](https://i.nahraj.to/f/2fIe.PNG)
 ![Budíková reprezentácia maxím, miním, priemerov](https://i.nahraj.to/f/2fIf.PNG)
 
-# Schéma zapojenia
+# Schéma zapojenia - Autodesk Eagle Export
 **Arduino + BMP280 + DHT22 + DS18B20:**
 ![Arduino + BMP280 + DHT22 + DS18B20](https://i.imgur.com/sMJskFE.png)
 
