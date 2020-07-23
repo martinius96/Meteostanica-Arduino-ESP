@@ -1,6 +1,5 @@
 # Meteostanica-Arduino-ESP
-**Podpora pre viac projektov zdarma:**
-* paypal.me/chlebovec
+**Podpora pre viac projektov zdarma: https://paypal.me/chlebovec**
 
 **Meteostanica ponúka:**
 * Záznam 3x teploty, 1x atmosférický tlak (možnosť prepočítavať na hladinu mora, možnosť určovať aj nadmorskú výšku), 1x vlhkosť vzduchu
