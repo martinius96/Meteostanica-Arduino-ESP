@@ -33,6 +33,7 @@
 * Google Charts - čiarové grafy pre časovú reprezentáciu vývoja dát, budíkové reprezentácia maxím, miním
 * Wiring - zjednodušený C jazyk pre Arduino IDE
 
+# Prekvizita
 **Pre spustenie projektu je nutné:**
 * Mať webserver v LAN sieti, alebo na internete, kam sa bude Arduino pripájať
 * Webserver musí byť aj na HTTP protokole (Arduino nepodporuje HTTPS)
