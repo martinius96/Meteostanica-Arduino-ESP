@@ -1,0 +1,1 @@
+<?php file_put_contents('../values/resetdosky.txt', "Reštart sa úspešne vykonal"); ?>
