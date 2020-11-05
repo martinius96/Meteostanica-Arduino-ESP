@@ -6,7 +6,7 @@
 **Meteostanica ponúka:**
 * Záznam 3x teploty, 1x atmosférický tlak (možnosť prepočítavať na hladinu mora, možnosť určovať aj nadmorskú výšku), 1x vlhkosť vzduchu
 * Grafické používateľské rozhranie (responzívne)
-* Výpis real-time dát do tabuľky s overením konektivity
+* Výpis posledných prijatých dát do tabuľky s overením konektivity
 * Tabuľkový výpis posledných 1000 meraní
 * Login systém
 * Archivácia v 5-15-minútových intervaloch do MySQL databázy, Google Grafy (náhrada za CanvasJS) - výpis grafov aktuálny deň + 7 posledných dní
@@ -31,7 +31,7 @@
 * PHP 5.6 / 7+
 * HTML 5
 * CSS
-* AJAX - dynamický výpis real-time dát z databázy spúšťaním .php scriptov
+* AJAX - spustenie série .php scriptov pre výpis
 * Google Charts - čiarové grafy pre časovú reprezentáciu vývoja dát, budíkové reprezentácia maxím, miním
 * Wiring - zjednodušený C jazyk pre Arduino IDE
 
