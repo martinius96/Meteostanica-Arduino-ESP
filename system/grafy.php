@@ -212,7 +212,7 @@ include ("meta.php");
 ?>	
 </head>
 <?php $stranka = "Grafy";?>
-<body>
+<body onload="myFunction()">
 	<!-- WRAPPER -->
 	<div id="wrapper">
 	<?php 
