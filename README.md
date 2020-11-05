@@ -1,7 +1,7 @@
 # Meteostanica-Arduino-ESP
 **Podpora pre viac projektov zdarma: https://paypal.me/chlebovec**
 
-* free verzia neobsahuje checksum overenie nameraných údajov (-127 pri DS18B20 pri zlom zapojení, poruche senzorov), neinformuje o chybných senzoroch, dáta webserver prijíma po HTTP protokole GET metódou - obmedzenie free verzie
+* free verzia neobsahuje checksum overenie nameraných údajov (-127 pri DS18B20 pri zlom zapojení, poruche senzorov), neinformuje o chybných senzoroch, dáta webserver prijíma po HTTP protokole GET metódou - obmedzenie free verzie - **možné straty údajov, neočakávané kritické chyby za ktoré autor nezodpovedá ani za škody spôsobené prevádzkovaním projektu. Stiahnutím a používaním projektu sa zaväzujete k dodržiavaniu MIT licencie. V prípade jej porušenia si uvedomujete právne následky.**
 
 **Meteostanica ponúka:**
 * Záznam 3x teploty, 1x atmosférický tlak (možnosť prepočítavať na hladinu mora, možnosť určovať aj nadmorskú výšku), 1x vlhkosť vzduchu
@@ -11,7 +11,7 @@
 * Login systém
 * Archivácia v 5-15-minútových intervaloch do MySQL databázy, Google Grafy (náhrada za CanvasJS) - výpis grafov aktuálny deň + 7 posledných dní
 * Orientačná prognóza počasia z nameraných údajov
-* Reset dosky na diaľku
+* Reset dosky na diaľku (Vo free verzii v mikrokontroléroch logika nie je implementovaná, doska sa nereštartuje)
 * Log prihlásení/zmena loginu
 * Indikátor stavu pripojenia dosky
 * Zmena názvov jednotlivých izieb/názvov senzorov
@@ -38,7 +38,7 @@
 # Prekvizita
 **Pre spustenie projektu je nutné:**
 * Mať webserver v LAN sieti, alebo na internete, kam sa bude Arduino pripájať
-* Webserver musí byť na HTTP protokole (Arduino nepodporuje HTTPS)
+* Webserver musí byť na HTTP protokole (Arduino nepodporuje HTTPS), podpora HTTPS nie je pre free verziu implementovaná na strane mikrokontorlérov
 * Webserver musí mať MySQL databázu (napr. PHPMyAdmin)
 * Webserver musí mať prístup na internet (knižnice na CDN serveroch: Jquery, Bootstrap)
 
