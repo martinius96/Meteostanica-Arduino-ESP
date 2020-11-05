@@ -10,7 +10,7 @@ include ("meta.php");
 ?>
 </head>
 <?php $stranka = "Dashboard";?>
-<body>
+<body onload="myFunction()">
 	<!-- WRAPPER -->
 	<div id="wrapper">
 	
