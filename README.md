@@ -1,5 +1,5 @@
 # Meteostanica-Arduino-ESP
-**Podpora pre viac projektov zdarma: https://paypal.me/chlebovec**
+**Podpora pre viac projektov zdarma a doplnenie funkcionalít, zabezpečenia: https://paypal.me/chlebovec**
 
 * free verzia neobsahuje checksum overenie nameraných údajov (-127 pri DS18B20 pri zlom zapojení, poruche senzorov), neinformuje o chybných senzoroch, dáta webserver prijíma po HTTP protokole GET metódou - obmedzenie free verzie - **možné straty údajov, neočakávané kritické chyby za ktoré autor nezodpovedá ani za škody spôsobené prevádzkovaním projektu. Stiahnutím a používaním projektu sa zaväzujete k dodržiavaniu MIT licencie. V prípade jej porušenia si uvedomujete právne následky.**
 
