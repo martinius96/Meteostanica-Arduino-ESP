@@ -32,6 +32,9 @@ include ("menu.php");
 							<div class="panel">
 							<div class="panel-body">
 									<br><br>
+							<div class="alert alert-danger">
+  <strong>Funkcionalita vzdialeného reštartu nie je dostupná vo verzii projektu zdarma</strong>
+</div>	
       <center><a href="vykonaj-reset.php" class="btn btn-success">Reštart dosky</a>
 	  <br>
 	  <font color="black"><b id="getreset"></b></font>
