@@ -30,38 +30,14 @@ include ("menu.php");
 							<div class="panel">
 							<div class="panel-body">
 							<h2><font color="black">Zmena názvov pre periférie</font></h2>  
-              <?php  
-              if(isset($_POST['zmenbarometer'])){
-                $barometer = $_POST['barometer'];
-                file_put_contents(__DIR__ . '/nazvyperiferii/barometer.txt', $barometer);
-              echo '<div class="alert alert-success"><strong>Názov  pre barometer úspešne zmenený!</strong></div>';
-              }   
-              if(isset($_POST['zmenvlhkomer'])){
-                $vlhkomer = $_POST['vlhkomer'];
-                file_put_contents(__DIR__ . '/nazvyperiferii/vlhkomer.txt', $vlhkomer);
-                echo '<div class="alert alert-success"><strong>Názov pre vlhkomer úspešne zmenený!</strong></div>';
-              }
-              if(isset($_POST['zmenteplotu1'])){
-                $teplota1 = $_POST['teplota1'];
-                file_put_contents(__DIR__ . '/nazvyperiferii/teplomer1.txt', $teplota1);
-                echo '<div class="alert alert-success"><strong>Názov pre teplomer č. 1 úspešne zmenený!</strong></div>';
-              }
-              if(isset($_POST['zmenteplotu2'])){
-                $teplota2 = $_POST['teplota2'];
-                file_put_contents(__DIR__ . '/nazvyperiferii/teplomer2.txt', $teplota2);
-                echo '<div class="alert alert-success"><strong>Názov pre teplomer č. 2 úspešne zmenený!</strong></div>';
-              }
-              if(isset($_POST['zmenteplotu3'])){
-                $teplota3 = $_POST['teplota3'];
-                file_put_contents(__DIR__ . '/nazvyperiferii/teplomer3.txt', $teplota3);
-                echo '<div class="alert alert-success"><strong>Názov pre teplomer č. 3 úspešne zmenený!</strong></div>';
-              }
-            ?>   
+<div class="alert alert-danger">
+  <strong>Vo verzii zdarma nie je možnosť meniť názvy</strong>
+</div>
                <div class="row">
                <div class="col-md-4">
                <center>      
                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-               <input name="teplota1" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/teplomer1.txt"); ?>" type="text" required><br>
+               <input name="teplota1" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/teplomer1.txt"); ?>" type="text" disabled><br>
                <input type="submit" name="zmenteplotu1" class="btn btn-success" value="Zmeniť">    
                </form>    
                </center>  
@@ -69,7 +45,7 @@ include ("menu.php");
                <div class="col-md-4">
                <center>      
                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-               <input name="teplota2" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/teplomer2.txt"); ?>" type="text" required><br>
+               <input name="teplota2" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/teplomer2.txt"); ?>" type="text" disabled><br>
                <input type="submit" name="zmenteplotu2" class="btn btn-success" value="Zmeniť">          
                </form>
                </center>
@@ -77,7 +53,7 @@ include ("menu.php");
                <div class="col-md-4">
                <center>      
                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-               <input name="teplota3" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/teplomer3.txt"); ?>" type="text" required><br>
+               <input name="teplota3" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/teplomer3.txt"); ?>" type="text" disabled><br>
                <input type="submit" name="zmenteplotu3" class="btn btn-success" value="Zmeniť">          
                </form>    
                </center> 
@@ -89,7 +65,7 @@ include ("menu.php");
                <div class="col-md-4">
                <center> 
                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-               <input name="barometer" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/barometer.txt"); ?>" type="text" required><br>
+               <input name="barometer" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/barometer.txt"); ?>" type="text" disabled><br>
                <input type="submit" name="zmenbarometer" class="btn btn-danger" value="Zmeniť">          
                </form>     
                </center>
@@ -99,7 +75,7 @@ include ("menu.php");
                <div class="col-md-4">
                <center>
                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-               <input name="vlhkomer" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/vlhkomer.txt"); ?>" type="text" required><br>
+               <input name="vlhkomer" style="text-align: center" placeholder="<?php echo file_get_contents("nazvyperiferii/vlhkomer.txt"); ?>" type="text" disabled><br>
                <input type="submit" name="zmenvlhkomer" class="btn btn-danger" value="Zmeniť">
                </form>
                </center>								
