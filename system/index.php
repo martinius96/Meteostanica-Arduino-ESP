@@ -29,7 +29,8 @@ include ("menu.php");
 							<div class="panel">
 							<div class="panel-body">
 								<div class="alert alert-danger">
-  <strong>Vo verzii projektu zdarma nie je funkcionalita automatickej obnovy nameraných údajov v prehľade dostupná. Musíte vykonávať manuálny refresh pre získanie aktuálne nameraných údajov</strong>
+  <strong>Vo verzii projektu zdarma nie je funkcionalita automatickej obnovy nameraných údajov v prehľade dostupná. 
+Musíte vykonávať manuálny refresh pre získanie aktuálne nameraných údajov.</strong> V prípade záujmu o kúpu verzie bez obmedzení: martinius96@gmail.com
 </div>	
 									<h2>Údaje</h2>
                   <table class="table table-striped flat-table flat-table-1" style="color: black;">									
