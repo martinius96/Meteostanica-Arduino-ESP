@@ -18,7 +18,7 @@ DallasTemperature sensors(&oneWire);
 DHT_Unified dht(DHTPIN, DHTTYPE);
 const char* ssid = "meno_wifi";
 const char* password = "heslo_wifi";
-const char* host = "www.arduino.php5.sk";
+const char* host = "arduino.clanweb.eu";
 const int httpPort = 80;
 WiFiClient client;
 Adafruit_BMP280 bmp;
