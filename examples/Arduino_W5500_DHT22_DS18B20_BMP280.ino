@@ -14,7 +14,7 @@ DHT_Unified dht(DHTPIN, DHTTYPE);
 OneWire oneWire(ONE_WIRE_BUS);       //inicializacia pinu
 DallasTemperature sensors(&oneWire); //priradenie ds18b20 senzorov na onewire zbernicu
 byte mac[] = { 0x20, 0x1A, 0x06, 0x75, 0x8C, 0xAA };
-char server[] = "www.arduino.php5.sk";
+char server[] = "arduino.clanweb.eu";
 IPAddress dnServer(192, 168, 0, 1);
 IPAddress gateway(192, 168, 0, 1);
 IPAddress subnet(255, 255, 255, 0);
@@ -64,7 +64,7 @@ void odosli_data() {
     client.print("&vlhkost=");
     client.print(h);
     client.println(" HTTP/1.1");                 // UKONCENIE REQUESTU ZALOMENIM RIADKA A DOPLNENIM HLAVICKY HTTP S VERZIOU
-    client.println("Host: www.arduino.php5.sk"); // ADRESA HOSTA, NA KTOREHO BOL MIERENY REQUEST (NIE PHP SUBOR)
+    client.println("Host: arduino.clanweb.eu"); // ADRESA HOSTA, NA KTOREHO BOL MIERENY REQUEST (NIE PHP SUBOR)
     client.println("Connection: close");         //UKONCENIE PRIPOJENIA ZA HTTP HLAVICKOU
     client.println();                            //ZALOMENIE RIADKA KLIENTSKEHO ZAPISU
     client.stop();
@@ -76,7 +76,7 @@ void odosli_data() {
 void skontroluj_reset() {
   if (client.connect(server, 80)) {
     client.println("GET /meteostanicav2/system/resetdosky.txt HTTP/1.1");
-    client.println("Host: www.arduino.php5.sk");
+    client.println("Host: arduino.clanweb.eu");
     client.println("Connection: close");
     client.println();
     while (client.connected()) {
@@ -92,7 +92,7 @@ void skontroluj_reset() {
       if (client.connect(server, 80)) {
         client.print("GET /meteostanicav2/system/nodemcu/potvrdreset.php");
         client.println(" HTTP/1.1");
-        client.println("Host: www.arduino.php5.sk");
+        client.println("Host: arduino.clanweb.eu");
         client.println("Connection: close");
         client.println();
         client.stop();
