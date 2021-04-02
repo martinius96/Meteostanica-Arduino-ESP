@@ -16,7 +16,7 @@ DallasTemperature sensors(&oneWire);
 Adafruit_BME280 bme;
 const char* ssid = "MENO_WIFI";
 const char* password = "HESLO_WIFI";
-const char* host = "www.arduino.php5.sk";
+const char* host = "arduino.clanweb.eu";
 const int httpPort = 80;
 WiFiClient client;
 void setup() {
