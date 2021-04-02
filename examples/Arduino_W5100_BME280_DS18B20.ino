@@ -63,7 +63,7 @@ void odosli_data() {
 void skontroluj_reset() {
   if (client.connect(server, 80)) {
     client.println("GET /meteostanicav2/system/resetdosky.txt HTTP/1.1");
-    client.println("Host: www.arduino.php5.sk");
+    client.println("Host: arduino.clanweb.eu");
     client.println("Connection: close");
     client.println();
     while (client.connected()) {
@@ -79,7 +79,7 @@ void skontroluj_reset() {
       if (client.connect(server, 80)) {
         client.print("GET /meteostanicav2/system/nodemcu/potvrdreset.php");
         client.println(" HTTP/1.1");
-        client.println("Host: www.arduino.php5.sk");
+        client.println("Host: arduino.clanweb.eu");
         client.println("Connection: close");
         client.println();
         client.stop();
