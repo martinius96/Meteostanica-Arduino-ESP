@@ -51,9 +51,12 @@
 * Klient, ktorý sa pripája na webserver musí mať pripojenie na internet (sťahujú sa CDN scripty na Bootstrap, Google Charts)
 
 **Screenshoty webaplikácie meteostanice:**
-![Prehľad nameraných údajov](https://i.nahraj.to/f/2fIb.PNG)
-![Grafická reprezentácia nameraných údajov v čase](https://i.nahraj.to/f/2fIe.PNG)
-![Budíková reprezentácia maxím, miním, priemerov](https://i.nahraj.to/f/2fIf.PNG)
+![Prehľad nameraných údajov](https://i.imgur.com/m0cfZBS.png)
+![Grafická reprezentácia nameraných údajov v čase](https://i.imgur.com/rfuGY1h.png)
+![Budíková reprezentácia maxím, miním, priemerov](https://i.imgur.com/ea4XkK6.png)
+![Budíková reprezentácia maxím, miním, priemerov](https://i.imgur.com/V4cQ9A3.png)
+![Budíková reprezentácia maxím, miním, priemerov](https://i.imgur.com/q4piu78.png)
+![Logy zlých prihlásení](https://i.imgur.com/itAUnOP.png)
 
 # Schéma zapojenia - Autodesk Eagle Export
 **Arduino + BMP280 + DHT22 + DS18B20:**
