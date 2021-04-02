@@ -12,7 +12,7 @@ DallasTemperature sensors(&oneWire); //priradenie ds18b20 senzorov na onewire zb
 #define BME280_ADRESA (0x76)
 Adafruit_BME280 bme;
 byte mac[] = { 0x20, 0x1A, 0x06, 0x75, 0x8C, 0xAA };
-char server[] = "www.arduino.php5.sk";
+char server[] = "arduino.clanweb.eu";
 IPAddress dnServer(192, 168, 0, 1);
 IPAddress gateway(192, 168, 0, 1);
 IPAddress subnet(255, 255, 255, 0);
@@ -51,7 +51,7 @@ void odosli_data() {
     client.print("&vlhkost=");
     client.print(vlhkost);
     client.println(" HTTP/1.1");                 // UKONCENIE REQUESTU ZALOMENIM RIADKA A DOPLNENIM HLAVICKY HTTP S VERZIOU
-    client.println("Host: www.arduino.php5.sk"); // ADRESA HOSTA, NA KTOREHO BOL MIERENY REQUEST (NIE PHP SUBOR)
+    client.println("Host: arduino.clanweb.eu"); // ADRESA HOSTA, NA KTOREHO BOL MIERENY REQUEST (NIE PHP SUBOR)
     client.println("Connection: close");         //UKONCENIE PRIPOJENIA ZA HTTP HLAVICKOU
     client.println();                            //ZALOMENIE RIADKA KLIENTSKEHO ZAPISU
     client.stop();
